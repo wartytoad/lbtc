@@ -115,7 +115,7 @@ def run(N,k,long_display):
 
 def show_values(event):
     N = document["input1"].value
-    k = document["input2"].value
+	k = document["input2"].value
     select = document["select"]
     long_display = select.options[select.selectedIndex].value
     output = run(N,k, long_display)
