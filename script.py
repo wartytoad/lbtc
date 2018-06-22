@@ -1,3 +1,4 @@
+from browser import document, html
 from collections import defaultdict
 import sys
 
