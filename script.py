@@ -1,4 +1,3 @@
-from browser import document, html
 from collections import defaultdict
 import sys
 
@@ -115,15 +114,14 @@ def run(N,k,long_display):
 
 def show_values(event):
     N = document["input1"].value
-	k = document["input2"].value
+    k= document["input2"].value
     select = document["select"]
     long_display = select.options[select.selectedIndex].value
     output = run(N,k, long_display)
-    document["zone"].clear()
-    document["zone"] <= (f"Value in N field: {input1}",
+    document['zone'].clear()
+    document['zone']<= (f"Value in N field: {input1}",
     html.BR(),f"Value in k field: {input2}",
     html.BR(), f"Selected long display option: {long_display}",
     html.BR(), output
     )
-
 document["button"].bind("click", show_values)
